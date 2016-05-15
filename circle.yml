@@ -10,7 +10,7 @@ checkout:
   post:
     - rm -rf ${COPY_DESTINATION}
     - mkdir -pv ${COPY_DESTINATION}
-    - cp -pR ${HOME}/${CIRCLE_PROJECT_REPONAME} ${COPY_DESTINATION}
+    - cp -pvR ${HOME}/${CIRCLE_PROJECT_REPONAME} ${COPY_DESTINATION}
 
 dependencies:
   override:
