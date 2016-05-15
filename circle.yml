@@ -8,14 +8,12 @@ machine:
 
 checkout:
   post:
-    - unlink -f ${LINK_DESTINATION}
+    - ln -sfv ${HOME}/${CIRCLE_PROJECT_REPONAME} ${LINK_DESTINATION}
 
 dependencies:
   override:
     - make deps
     - make deps-release
-  post:
-    - ln -sfv ${HOME}/${CIRCLE_PROJECT_REPONAME} ${LINK_DESTINATION}
 
 test:
   override:
