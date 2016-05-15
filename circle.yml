@@ -8,7 +8,7 @@ machine:
 
 checkout:
   post:
-    - unlink -v ${LINK_DESTINATION}
+    - unlink -f ${LINK_DESTINATION}
 
 dependencies:
   override:
