@@ -4,8 +4,8 @@ machine:
 
 checkout:
   post:
-    - service stop mysql
-    - service stop postgresql
+    - service mysql stop
+    - service postgresql stop
 
 dependencies:
   override:
