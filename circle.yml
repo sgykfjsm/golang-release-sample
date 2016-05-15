@@ -1,8 +1,6 @@
 machine:
   timezone:
     Asia/Tokyo
-
-checkout:
   post:
     - service mysql stop
     - service postgresql stop
