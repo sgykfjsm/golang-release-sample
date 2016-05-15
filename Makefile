@@ -13,7 +13,7 @@ build:
 	gox -verbose -output="dist/{{.Dir}}_${VERSION}_{{.OS}}_{{.Arch}}"
 
 dist: build
-	ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME dist/
+	ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} ${VERSION} dist/
 
 test:
 	go vet $(glide novendor)
