@@ -1,5 +1,5 @@
-hash: 095102c0353a81374081fa086dd9b12e676b01c8d382d37570a141ed7efab66a
-updated: 2016-05-15T22:04:22.260710527+09:00
+hash: dbe541e3030a884607e5d7766a180750e76a6094bbe0065a3f84fd38163669e1
+updated: 2016-05-15T23:16:29.801908496+09:00
 imports:
 - name: github.com/BurntSushi/toml
   version: f0aeabca5a127c4078abb8c8d64298b147264b55
@@ -22,6 +22,10 @@ imports:
   version: c265cfa48dda6474e208715ca93e987829f572f8
 - name: github.com/mitchellh/mapstructure
   version: d2dd0262208475919e1a362f675cfc0e7c10e905
+- name: github.com/sgykfjsm/golang-release-sample
+  version: 39dd7dc62e7188d51a643052555c5195a335923a
+  subpackages:
+  - cmd
 - name: github.com/spf13/cast
   version: 27b586b42e29bec072fe7379259cc719e1289da6
 - name: github.com/spf13/cobra
