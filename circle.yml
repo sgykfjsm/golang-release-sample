@@ -4,7 +4,7 @@ machine:
   environment:
     FIRST_GOPATH: "$(echo ${GOPATH} | cut -d: -f1)"
     REPOSITORY_DOMAIN: github.com
-    COPY_DESTINATION: ${FIRST_GOPATH}/${REPOSITORY_DOMAIN}/${CIRCLE_USERNAME}
+    COPY_DESTINATION: ${FIRST_GOPATH}/src/${REPOSITORY_DOMAIN}/${CIRCLE_USERNAME}
 
 checkout:
   post:
