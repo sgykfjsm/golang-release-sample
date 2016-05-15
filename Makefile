@@ -7,6 +7,7 @@ deps:
 
 deps-release:
 	go get -v github.com/mitchellh/gox
+	go get -v github.com/tcnksm/ghr
 
 build:
 	gox -verbose -output="dist/{{.Dir}}_${VERSION}_{{.OS}}_{{.Arch}}"
