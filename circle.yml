@@ -8,14 +8,14 @@ machine:
 
 checkout:
   post:
-    - rm -rvf ${COPY_DESTINATION}
+    - rm -rvf ${LINK_DESTINATION}
 
 dependencies:
   override:
     - make deps
     - make deps-release
   post:
-    - ln -sfv ${HOME}/${CIRCLE_PROJECT_REPONAME} ${COPY_DESTINATION}
+    - ln -sfv ${HOME}/${CIRCLE_PROJECT_REPONAME} ${LINK_DESTINATION}
 
 test:
   override:
