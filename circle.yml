@@ -1,0 +1,24 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+checkout:
+  post:
+    - service stop mysql
+    - service stop postgresql
+
+dependencies:
+  override:
+    - make deps
+    - make deps-release
+
+test:
+  override:
+    - make test
+
+deployment:
+  release:
+    branch: master
+    commands:
+      - make dist
+      - make clean
